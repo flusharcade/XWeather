@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIdentifier</key>
-	<string>com.xamarin.xweather</string>
 	<key>CFBundleName</key>
 	<string>XWeather</string>
 	<key>CFBundleShortVersionString</key>
@@ -55,5 +53,7 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.flusharcade.testing</string>
 </dict>
 </plist>

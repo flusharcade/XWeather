@@ -2,6 +2,9 @@
 using UIKit;
 
 using Microsoft.Azure.Mobile.Distribute;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 namespace XWeather.iOS
 {
@@ -14,7 +17,10 @@ namespace XWeather.iOS
 		{
 			Shared.Bootstrap.Run ();
 
-			Analytics.Start ();
+			MobileCenter.Start ("fae15d34-af1f-47ec-bec2-6f37affc1cb3",
+				   typeof (Analytics), typeof (Crashes));
+			
+			//Analytics.Start ();
 		}
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
