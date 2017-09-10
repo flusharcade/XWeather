@@ -156,5 +156,26 @@ namespace XWeather.UITests
 
 			app.Screenshot ("Daily Forecast (Metric)");
 		}
+
+		[Test]
+		public void NewTest ()
+		{
+			app.Tap (x => x.Class ("UITableViewCellContentView"));
+			app.Screenshot ("Tapped on view with class: UITableViewCellContentView");
+			app.ScrollDown ();
+			app.Screenshot ("Swiped up");
+			app.Tap (x => x.Id ("button_locations"));
+			app.Screenshot ("Tapped on view with class: UIButton with id: button_locations with marked: i list");
+			app.Tap (x => x.Id ("button_add"));
+			app.Screenshot ("Tapped on view with class: UIButton with id: button_add with marked: i add sm");
+			app.Tap (x => x.Class ("UIFieldEditor"));
+			app.Screenshot ("Tapped on view with class: UIFieldEditor");
+			app.EnterText (x => x.Marked ("Search"), "Sydney");
+			app.Tap (x => x.Id ("LocationSearchTvCell_nameLabel"));
+			app.Screenshot ("Tapped on view with class: UITableViewLabel with id: LocationSearchTvCell_nameLabel with text: Sydney, Australia with marked: Sydney, Australia");
+			app.Tap (x => x.Id ("button_close"));
+			app.Screenshot ("Tapped on view with class: UIButton with id: button_close with marked: i close");
+		}
+
 	}
 }
