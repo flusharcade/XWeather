@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.microsoft.testing1</string>
 	<key>CFBundleName</key>
 	<string>XWeather</string>
 	<key>CFBundleShortVersionString</key>
@@ -16,15 +18,22 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>217</string>
+	<string>223</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
 	<string>9.0</string>
+	<key>MobileCenterAppDelegateForwarderEnabled</key>
+	<integer>0</integer>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location is used to provide local weather.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>remote-notification</string>
+	</array>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -53,7 +62,5 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.flusharcade.testing</string>
 </dict>
 </plist>

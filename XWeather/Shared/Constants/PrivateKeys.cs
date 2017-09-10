@@ -9,7 +9,7 @@
 		public static class MobileCenter                 // https://github.com/colbylwilliams/XWeather#mobile-center#visual-studio-mobile-center-optional
 		{
 #if __IOS__
-			public const string AppSecret = @"";
+			public const string AppSecret = @"b8cf14ac-35a9-4933-ae41-077d14d2b95d";
 
 			public const string ServiceUrl = @"";
 #elif __ANDROID__
